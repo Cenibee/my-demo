@@ -9,8 +9,8 @@ import javax.persistence.Id;
 @Entity
 @Builder
 @Getter @Setter
-@EqualsAndHashCode(of = "id")
 @NoArgsConstructor
+@AllArgsConstructor
 public class Account {
 
     @Id

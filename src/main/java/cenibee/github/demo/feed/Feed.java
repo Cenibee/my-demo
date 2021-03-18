@@ -9,11 +9,12 @@ import javax.persistence.Id;
 @Entity
 @Builder
 @Getter @Setter
-@EqualsAndHashCode(of = "id")
 @NoArgsConstructor
+@AllArgsConstructor
 public class Feed {
 
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     Long id;
 
     String description;
